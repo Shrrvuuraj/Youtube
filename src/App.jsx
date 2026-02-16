@@ -1,10 +1,21 @@
 import React from 'react'
+import Header from './components/Header'
+import Sidebar from './components/Sidebar'
+import { Container } from 'react-bootstrap'
+import HomeScreen from './screen/HomeScreen'
 
 const App = () => {
   return (
-    <div className='border-2'>
-      Not Youtube
-    </div>
+    <>
+     <Header/>
+
+     <div className='app_container'>
+      <Sidebar/>
+      <Container fluid className='app_main'>
+        <HomeScreen/>
+      </Container>
+     </div>
+    </>
   )
 }
 
