@@ -3,8 +3,10 @@ import { Container } from 'react-bootstrap'
 
 const HomeScreen = () => {
   return (
-    <Container><Container/>
+    <Container>
+      
+    </Container>
   )
 }
 
-export default HomeScreen
+export default HomeScreen;
