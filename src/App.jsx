@@ -9,10 +9,10 @@ const App = () => {
     <>
      <Header/>
 
-     <div className='app_container'>
+     <div className='app_container border border-info'>
       <Sidebar/>
       <Container fluid className='app_main'>
-        <HomeScreen/>
+        <HomeScreen />
       </Container>
      </div>
     </>
