@@ -1,3 +1,9 @@
 *{
      background: rgb(77, 72, 72);
 }
+.header__logo{
+     width: 40px;
+}
+.image{
+     width: 28px;
+}
