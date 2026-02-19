@@ -9,9 +9,9 @@ const App = () => {
     <>
      <Header/>
 
-     <div className='app_container border border-info'>
+     <div className='app__container border border-info'>
       <Sidebar/>
-      <Container fluid className='app_main border border-warning'>
+      <Container fluid className='app__main border border-warning'>
         <HomeScreen />
       </Container>
      </div>
