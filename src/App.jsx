@@ -11,7 +11,7 @@ const App = () => {
 
      <div className='app_container border border-info'>
       <Sidebar/>
-      <Container fluid className='app_main'>
+      <Container fluid className='app_main border border-warning'>
         <HomeScreen />
       </Container>
      </div>
