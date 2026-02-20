@@ -1,10 +1,11 @@
 import React from 'react'
+import "./stylesheet/apptwo.css"
 
 const Sidebar = () => {
   return (
-    <div>
-      SideBar
-    </div>
+    <nav className='border border-danger sidebar'>
+     
+    </nav>
   )
 }
 
