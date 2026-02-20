@@ -3,6 +3,7 @@ import Header from './components/Header'
 import Sidebar from './components/Sidebar'
 import { Container } from 'react-bootstrap'
 import HomeScreen from './screen/HomeScreen'
+import "./components/stylesheet/App.css"
 
 const App = () => {
   return (
