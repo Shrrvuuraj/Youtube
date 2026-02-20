@@ -10,6 +10,7 @@ const Header = () => {
         src="https://static.vecteezy.com/system/resources/thumbnails/042/127/234/small/white-square-bordered-youtube-logo-on-transparent-background-free-png.png"
         alt="youtube logo"
         className="header__logo "
+        
       />
       <form>
         <input type="text"  placeholder="Search"/>
