@@ -11,7 +11,7 @@
 
 .app__container {
     display: flex;
-    height: 90vh;
+    height: auto;
 }
 
 /* Header */
