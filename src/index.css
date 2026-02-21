@@ -1,7 +1,9 @@
 
-.header__logo{
-     width: 40px;
+*{
+     user-select: none;
+     /* -webkit-user-drag: none; */
 }
-.image{
-     width: 28px;
+#root{
+     background: #16181b;
+    
 }

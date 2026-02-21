@@ -5,6 +5,9 @@
     --breakpoint-medium: 1224px;
     --breakpoint-small: 520px;
 }
+*{
+    color: beige;
+}
 
 .app__container {
     display: flex;
