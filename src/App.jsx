@@ -4,6 +4,7 @@ import Sidebar from './components/Sidebar'
 import { Container } from 'react-bootstrap'
 import HomeScreen from './screen/HomeScreen'
 import "./components/stylesheet/App.css"
+import LoginScreen from './screen/LoginScreen'
 
 
 
@@ -29,14 +30,15 @@ useEffect(()=>{
   }
   return (
     <>
-     <Header handleToglleSideBar={handleToglleSideBar}/>
+     {/* <Header handleToglleSideBar={handleToglleSideBar}/>
 
      <div className='app__container border border-info'>
       <Sidebar sideBar={sideBar} handleToglleSideBar={handleToglleSideBar}/>
       <Container fluid className='app__main border border-warning'>
         <HomeScreen />
       </Container>
-     </div>
+     </div> */}
+     <LoginScreen/>
     </>
   )
 }

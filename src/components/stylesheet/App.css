@@ -11,7 +11,8 @@
 
 .app__container {
     display: flex;
-    height: auto;
+    min-height: 90vh;
+    /* height: auto; */
 }
 
 /* Header */
@@ -112,3 +113,39 @@
     }
 }
 
+
+
+/* login */
+.login{
+    
+    min-height: 100vh;
+    display: grid;
+    place-items: center ;
+
+    .container{
+        background-color: var(--black-secondary);
+        padding: 2rem;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        img{
+            width: 130px;
+            aspect-ratio: 1;
+            object-fit: contain;
+    
+        }
+        button{
+            color: #121417;
+            padding: 0.5rem;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+            &:focus{
+                outline: none;
+            }
+        }
+
+        }
+    
+}
