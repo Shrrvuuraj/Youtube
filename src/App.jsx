@@ -9,7 +9,10 @@ import "./components/stylesheet/App.css"
 
 const App = () => {
   const [sideBar,toggleSidebar]=useState(false)
-  const handleToglleSideBar=()=>toggleSidebar(value=>!value)
+  const handleToglleSideBar=()=>{
+    toggleSidebar(prev=>!prev)
+    console.log(sideBar)
+  }
   return (
     <>
      <Header handleToglleSideBar={handleToglleSideBar}/>
