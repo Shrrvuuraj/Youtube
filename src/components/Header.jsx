@@ -5,7 +5,7 @@ import { MdNotifications, MdApps } from "react-icons/md";
 const Header = () => {
   return (
     <div className="border border-dark header">
-      <FaBars size={26} className="header__menu" />
+      <FaBars size={26} className="header__menu" color="white" />
       <img
         src="https://static.vecteezy.com/system/resources/thumbnails/042/127/234/small/white-square-bordered-youtube-logo-on-transparent-background-free-png.png"
         alt="youtube logo"
@@ -17,8 +17,8 @@ const Header = () => {
         <button type="submit" size={22}><AiOutlineSearch/></button>
       </form>
       <div className="header__icons">
-        <MdNotifications size={28}/>
-        <MdApps size={28}/>
+        <MdNotifications size={28} color="white"/>
+        <MdApps size={28} color="white"/>
         <img src="https://cdn.pixabay.com/photo/2023/02/18/11/00/icon-7797704_640.png" alt="user " className="image" />
       </div>
     </div>
