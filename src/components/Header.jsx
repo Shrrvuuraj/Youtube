@@ -2,10 +2,10 @@ import React from "react";
 import { FaBars } from "react-icons/fa";
 import { AiOutlineSearch } from "react-icons/ai";
 import { MdNotifications, MdApps } from "react-icons/md";
-const Header = () => {
+const Header = ({handleToglleSideBar}) => {
   return (
     <div className="border border-dark header">
-      <FaBars size={26} className="header__menu" color="white" />
+      <FaBars size={26} className="header__menu" color="white" onClick={()=>handleToglleSideBar()} />
       <img
         src="https://static.vecteezy.com/system/resources/thumbnails/042/127/234/small/white-square-bordered-youtube-logo-on-transparent-background-free-png.png"
         alt="youtube logo"

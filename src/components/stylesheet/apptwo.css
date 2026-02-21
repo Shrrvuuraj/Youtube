@@ -4,4 +4,58 @@
     --text-color: #e5e2e2;
     --breakpoint-medium: 1224px;
     --breakpoint-small: 520px;
+    --border-color: #4c4c4c;
+}
+.sidebar {
+  background: var(--black-primary);
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 90vh;
+  padding-top: 2rem;
+  color: var(--text-color);
+
+  li {
+    display: flex;
+    align-items: center;
+    padding: 0.6rem 1.5rem;
+    margin: 0.5rem 0;
+    cursor: pointer;
+
+    span {
+      margin-left: 1rem;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.4px;
+    }
+
+    &:hover {
+      background-color: var(--border-color);
+    }
+}
+hr{
+    background-color: var(--border-color);
+}
+}
+
+@media (max-width:1224px) {
+    .sidebar{
+        width: 90px;
+        li{
+            justify-content: center;
+        }
+        span{
+            display: none;
+        }
+    }
+    
+}
+@media (max-width:520px) {
+    .sidebar{
+        display: none;
+    }
+    .sidebar.show{
+        display: block;
+    }
+    
 }
