@@ -6,6 +6,14 @@
     --breakpoint-small: 520px;
     --border-color: #4c4c4c;
 }
+.sidebar.show{
+        transform: translateX(0%);
+    }
+    .sidebar.hide{
+        transform: translateX(-100%);
+        position: fixed;
+        z-index: 999;
+    }
 .sidebar {
   background: var(--black-primary);
   display: flex;
@@ -14,6 +22,7 @@
   height: 90vh;
   padding-top: 2rem;
   color: var(--text-color);
+  transition: all ease-in 0.2s;
 
   li {
     display: flex;
@@ -52,10 +61,10 @@ hr{
 }
 @media (max-width:520px) {
     .sidebar{
-        display: none;
+        transform: translateX(-100%);
+        position: fixed;
+        z-index: 999;
     }
-    .sidebar.show{
-        display: block;
-    }
+    
     
 }
