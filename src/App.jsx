@@ -5,7 +5,7 @@ import { Container } from "react-bootstrap";
 import HomeScreen from "./screen/HomeScreen";
 import "./components/stylesheet/App.css";
 import LoginScreen from "./screen/LoginScreen";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes,Navigate } from "react-router-dom";
 
 const Layout = ({ children }) => {
   const [sideBar, toggleSidebar] = useState(() => {
@@ -46,7 +46,9 @@ const App = () => {
 
         <Route path="/auth" element={<LoginScreen />} />
 
-        <Route path="/search" element={<h1>Search results</h1>} />
+        <Route path="/search" element={<Layout><h1>Search results</h1></Layout>} />
+        <Route path="*" element={<Navigate to="/"/>}/>
+        {/* u can also use to make a not avaible page  */}
       </Routes>
     </Router>
   );
